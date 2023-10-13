@@ -15,3 +15,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeController::class, 'index']);
+
+// get-state
+Route::post('/get-state', [HomeController::class, 'getState'])->name('get-state');
+
+// get-city
+Route::post('/get-city', [HomeController::class, 'getCity'])->name('get-city');
